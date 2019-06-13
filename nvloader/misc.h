@@ -15,9 +15,12 @@
 #define IOCTL_Subvert		CTL_CODE_GEN(0x801)
 #define IOCTL_Restore		CTL_CODE_GEN(0x802)
 #define IOCTL_SetPID		CTL_CODE_GEN(0x803)
+#define IOCTL_SetName		CTL_CODE_GEN(0x806)
 #define IOCTL_NvVer			CTL_CODE_GEN(0x810)
 #define IOCTL_CpuVs			CTL_CODE_GEN(0x811)
 #define IOCTL_CpuPn			CTL_CODE_GEN(0x812)
+#define IOCTL_OsVer			CTL_CODE_GEN(0x813)
+#define IOCTL_VirtCap		CTL_CODE_GEN(0x814)
 
 typedef struct _UNICODE_STRING
 {

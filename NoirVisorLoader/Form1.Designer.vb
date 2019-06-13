@@ -58,7 +58,7 @@ Partial Class Form1
         '
         Me.StatusStrip1.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 334)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 307)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(506, 22)
         Me.StatusStrip1.TabIndex = 0
@@ -78,9 +78,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 11)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(482, 105)
+        Me.GroupBox1.Size = New System.Drawing.Size(482, 97)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "System Information"
@@ -88,58 +88,58 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 83)
+        Me.Label5.Location = New System.Drawing.Point(6, 77)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(277, 13)
+        Me.Label5.Size = New System.Drawing.Size(109, 13)
         Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Processor Brand: Intel (R) Xeon (R) CPU x5675"
+        Me.Label5.Text = "Processor Brand: "
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 66)
+        Me.Label4.Location = New System.Drawing.Point(6, 61)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(187, 13)
+        Me.Label4.Size = New System.Drawing.Size(115, 13)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Processor Vendor: GenuineIntel"
+        Me.Label4.Text = "Processor Vendor: "
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 49)
+        Me.Label3.Location = New System.Drawing.Point(6, 45)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(283, 13)
+        Me.Label3.Size = New System.Drawing.Size(121, 13)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Supported Feature: Basic Intel VT-x, Intel EPT"
+        Me.Label3.Text = "Supported Feature: "
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(6, 32)
+        Me.Label2.Location = New System.Drawing.Point(6, 30)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(145, 13)
+        Me.Label2.Size = New System.Drawing.Size(91, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Architecture: Intel x64"
+        Me.Label2.Text = "Architecture: "
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 16)
+        Me.Label1.Location = New System.Drawing.Point(6, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(169, 13)
+        Me.Label1.Size = New System.Drawing.Size(115, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Operating System: Windows 7"
+        Me.Label1.Text = "Operating System: "
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 123)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 114)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(160, 95)
+        Me.GroupBox2.Size = New System.Drawing.Size(160, 88)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Virtualization Switch"
@@ -147,18 +147,18 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Enabled = False
-        Me.Button2.Location = New System.Drawing.Point(6, 57)
+        Me.Button2.Location = New System.Drawing.Point(6, 53)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(148, 32)
+        Me.Button2.Size = New System.Drawing.Size(148, 30)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Restore System"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(6, 19)
+        Me.Button1.Location = New System.Drawing.Point(6, 18)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(148, 32)
+        Me.Button1.Size = New System.Drawing.Size(148, 30)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Subvert System"
         Me.Button1.UseVisualStyleBackColor = True
@@ -168,18 +168,18 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.Button3)
         Me.GroupBox3.Controls.Add(Me.GroupBox4)
         Me.GroupBox3.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 224)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 207)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(160, 107)
+        Me.GroupBox3.Size = New System.Drawing.Size(160, 99)
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Stealth MSR-Hook Demo"
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(6, 70)
+        Me.Button3.Location = New System.Drawing.Point(6, 65)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(148, 31)
+        Me.Button3.Size = New System.Drawing.Size(148, 29)
         Me.Button3.TabIndex = 1
         Me.Button3.Text = "Change Protected PID"
         Me.Button3.UseVisualStyleBackColor = True
@@ -187,16 +187,16 @@ Partial Class Form1
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.TextBox1)
-        Me.GroupBox4.Location = New System.Drawing.Point(6, 19)
+        Me.GroupBox4.Location = New System.Drawing.Point(6, 18)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(148, 45)
+        Me.GroupBox4.Size = New System.Drawing.Size(148, 42)
         Me.GroupBox4.TabIndex = 0
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Input PID"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(6, 19)
+        Me.TextBox1.Location = New System.Drawing.Point(6, 18)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(136, 20)
         Me.TextBox1.TabIndex = 0
@@ -206,18 +206,18 @@ Partial Class Form1
         Me.GroupBox5.Controls.Add(Me.Button4)
         Me.GroupBox5.Controls.Add(Me.GroupBox6)
         Me.GroupBox5.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox5.Location = New System.Drawing.Point(178, 224)
+        Me.GroupBox5.Location = New System.Drawing.Point(178, 207)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(316, 107)
+        Me.GroupBox5.Size = New System.Drawing.Size(316, 99)
         Me.GroupBox5.TabIndex = 4
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Stealth Inline Hook Demo"
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(6, 70)
+        Me.Button4.Location = New System.Drawing.Point(6, 65)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(304, 31)
+        Me.Button4.Size = New System.Drawing.Size(304, 29)
         Me.Button4.TabIndex = 1
         Me.Button4.Text = "Change Protected File Name"
         Me.Button4.UseVisualStyleBackColor = True
@@ -225,16 +225,16 @@ Partial Class Form1
         'GroupBox6
         '
         Me.GroupBox6.Controls.Add(Me.TextBox2)
-        Me.GroupBox6.Location = New System.Drawing.Point(6, 19)
+        Me.GroupBox6.Location = New System.Drawing.Point(6, 18)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(304, 45)
+        Me.GroupBox6.Size = New System.Drawing.Size(304, 42)
         Me.GroupBox6.TabIndex = 0
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Input File Name"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(6, 19)
+        Me.TextBox2.Location = New System.Drawing.Point(6, 18)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(292, 20)
         Me.TextBox2.TabIndex = 0
@@ -243,26 +243,26 @@ Partial Class Form1
         'GroupBox7
         '
         Me.GroupBox7.Controls.Add(Me.Label6)
-        Me.GroupBox7.Location = New System.Drawing.Point(178, 123)
+        Me.GroupBox7.Location = New System.Drawing.Point(178, 114)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(316, 95)
+        Me.GroupBox7.Size = New System.Drawing.Size(316, 88)
         Me.GroupBox7.TabIndex = 5
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Information"
         '
         'Label6
         '
-        Me.Label6.Location = New System.Drawing.Point(6, 16)
+        Me.Label6.Location = New System.Drawing.Point(6, 15)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(304, 73)
+        Me.Label6.Size = New System.Drawing.Size(304, 67)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = resources.GetString("Label6.Text")
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(506, 356)
+        Me.ClientSize = New System.Drawing.Size(506, 329)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox3)

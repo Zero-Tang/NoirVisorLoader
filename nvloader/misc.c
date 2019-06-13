@@ -7,8 +7,26 @@ void __cdecl NoirDebugPrint(IN PCSTR Format,...)
 {
 	va_list ArgList;
 	va_start(ArgList,Format);
-	vDbgPrintExWithPrefix("[NSG DLL] ",DPFLTR_IHVDRIVER_ID,DPFLTR_INFO_LEVEL,Format,ArgList);
+	vDbgPrintExWithPrefix("[NoirVisor Loader] ",DPFLTR_IHVDRIVER_ID,DPFLTR_INFO_LEVEL,Format,ArgList);
 	va_end(ArgList);
+}
+
+__declspec(dllexport) void NvGetSystemVersion(OUT PWSTR Version)
+{
+	NvControlDriver(IOCTL_OsVer,NULL,0,Version,256);
+}
+
+__declspec(dllexport) ULONG NvGetCapability()
+{
+	ULONG Cap=0;
+	NvControlDriver(IOCTL_VirtCap,NULL,0,&Cap,4);
+	NoirDebugPrint("Capability: %d\n",Cap);
+	return Cap;
+}
+
+__declspec(dllexport) void NvSetProtectedFile(IN PWSTR FileName,IN ULONG Length)
+{
+	NvControlDriver(IOCTL_SetName,FileName,Length,NULL,0);
 }
 
 PVOID MemAlloc(IN ULONG Length)
@@ -46,7 +64,8 @@ __declspec(dllexport) void NvGetProcessorName(OUT PSTR ProcessorName)
 	NvControlDriver(IOCTL_CpuPn,NULL,0,ProcessorName,48);
 }
 
-void GetCurDir(IN PWSTR DirectoryName,IN ULONG Length)
+// This function would return the current directory with a trailing slash.
+void GetApplicationDirectory(IN PWSTR DirectoryName,IN ULONG Length)
 {
 	ULONG_PTR Peb=__readtebptr(TEB_PEB_OFFSET);
 	if(Peb)
@@ -56,6 +75,7 @@ void GetCurDir(IN PWSTR DirectoryName,IN ULONG Length)
 		{
 			PUNICODE_STRING CurDir=(PUNICODE_STRING)(UserParam+PARAM_CURDIR_OFFSET);
 			ULONG clen=CurDir->Length<Length?CurDir->Length:Length;
+			RtlZeroMemory(DirectoryName,Length);
 			RtlCopyMemory(DirectoryName,CurDir->Buffer,clen);
 		}
 	}

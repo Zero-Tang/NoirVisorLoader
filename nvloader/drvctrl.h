@@ -3,7 +3,10 @@
 #define NvServiceName		L"NoirVisor"
 #define NvLinkName			L"\\\\.\\NoirVisor"
 
-void GetCurDir(IN PWSTR DirectoryName,IN ULONG Length);
+void GetApplicationDirectory(IN PWSTR DirectoryName,IN ULONG Length);
+void __cdecl NoirDebugPrint(IN PCSTR Format,...);
+PVOID MemAlloc(IN ULONG Length);
+void MemFree(IN PVOID Memory);
 
 SC_HANDLE NvServiceHandle=NULL;
 HANDLE NvDeviceHandle=NULL;
