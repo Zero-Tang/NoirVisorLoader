@@ -44,7 +44,7 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
@@ -71,6 +71,16 @@
     <IncludePath>C:\WinDDK\7600.16385.1\inc\api;C:\WinDDK\7600.16385.1\inc\crt;C:\WinDDK\7600.16385.1\inc\mfc42</IncludePath>
     <ReferencePath />
     <LibraryPath>C:\WinDDK\7600.16385.1\lib\win7\amd64;C:\WinDDK\7600.16385.1\lib\Crt\amd64</LibraryPath>
+    <SourcePath />
+    <ExcludePath />
+    <GenerateManifest />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\Intermediate\</IntDir>
+    <ExecutablePath>C:\WinDDK\7600.16385.1\bin\x86;C:\WinDDK\7600.16385.1\bin\x86\amd64</ExecutablePath>
+    <IncludePath>C:\WinDDK\7600.16385.1\inc\api;C:\WinDDK\7600.16385.1\inc\crt;C:\WinDDK\7600.16385.1\inc\mfc42;</IncludePath>
+    <LibraryPath>C:\WinDDK\7600.16385.1\lib\Crt\amd64;C:\WinDDK\7600.16385.1\lib\win7\amd64</LibraryPath>
+    <ReferencePath />
     <SourcePath />
     <ExcludePath />
     <GenerateManifest />
@@ -155,12 +165,40 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>
+      </RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AssemblerOutput>All</AssemblerOutput>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;advapi32.lib;ntdll.lib;libcmt.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ManifestFile>
+      </ManifestFile>
+      <AllowIsolation>
+      </AllowIsolation>
+      <EnableUAC>
+      </EnableUAC>
+      <UACExecutionLevel>
+      </UACExecutionLevel>
+      <UACUIAccess>
+      </UACUIAccess>
+      <SubSystem>Windows</SubSystem>
+      <NoEntryPoint>true</NoEntryPoint>
     </Link>
+    <ResourceCompile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="drvctrl.h" />

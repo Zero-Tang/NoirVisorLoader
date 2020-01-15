@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("NoirVisor Loader")> 
 <Assembly: AssemblyCompany("zero.tangptr@gmail.com")> 
 <Assembly: AssemblyProduct("NoirVisorLoader")> 
-<Assembly: AssemblyCopyright("Copyright © 2019 zero.tangptr@gmail.com")> 
+<Assembly: AssemblyCopyright("Copyright © 2019-2020 zero.tangptr@gmail.com")> 
 <Assembly: AssemblyTrademark("Powered by zero.tangptr@gmail.com. All rights reserved.")> 
 
 <Assembly: ComVisible(False)>
